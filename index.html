@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
   <title>GT Digital Games</title>
 </head>
 <body>
-  <header class="contenedor-header">
-    <div>
-      <img class="imgLogo" src="./assets/img/Logo.png" alt="gt-digital-games">
+<section id="grid" class="contenedor-grid">
+  <header id="header" class="contenedor-header">
+    <div class="contenedor-imgLogo">
+      <a href="index.html"><img class="imgLogo" src="./assets/img/Logo.png" alt="gt-digital-games"></a>
     </div>
     <nav>
       <ul class="navbar">
@@ -24,15 +25,14 @@
       </ul>
     </nav>
     <div class="socialMedia">
-      <img src="./assets/img/facebook.png"  alt="instagram">
-      <img src="./assets/img/whatsapp.png" alt="whatsapp">
-      <img src="./assets/img/youtube.png" alt="youtube">
+      <a href="http://www.instagram.com"><img class="imgSocialmedia" src="./assets/img/instagram.png" alt="instagram"></a>
+      <a href="http://www.facebook.com"><img class="imgSocialmedia" src="./assets/img/facebook.png"  alt="facebook"></a>
+      <a href="http://www.whatsapp.com"><img class="imgSocialmedia" src="./assets/img/whatsapp.png" alt="whatsapp"></a>
+      <a href="http://www.youtube.com"><img class="imgSocialmedia" src="./assets/img/youtube.png" alt="youtube"></a>
     </div>
   </header>
-  <div>
+  <section id="principal" class="contenedor-main">
     <h1>Juegos digitales para PlayStation 4 y PlayStation 5</h1>
-  </div>
-  <section class="contenedor-main">
     <div>
       <a href="./pages/tienda.html" ><img class="imgMenu imgMenu-1" src="./assets/img/tienda.png" alt="tienda"></a>
     </div>
@@ -45,13 +45,13 @@
     <div>
         <a href="#" ><img class="imgMenu imgMenu-4" src="./assets/img/preventa.png" alt="preventa"></a>
     </div>
-    <div class="contenedor-columna">
-      <a href="#" ><img class="imgMenu1 imgMenu1-1" src="./assets/img/novedades.png" alt="novedades"></a>
-      <a href="#" ><img class="imgMenu1 imgMenu1-2" src="./assets/img/faq.png" alt="preguntas-frecuentes"></a>
+    <div class="contenedor-columnaImgLateral">
+      <a href="#" ><img class="imgMenuLateral imgMenu1-1" src="./assets/img/novedades.png" alt="novedades"></a>
+      <a href="#" ><img class="imgMenuLateral imgMenu1-2" src="./assets/img/faq.png" alt="preguntas-frecuentes"></a>
     </div>
     </div>
   </section>
-  <section class="contenedor-service">
+  <section id="service" class="contenedor-service">
     <div class="service">
       <img src="./assets/img/globe.png" alt="">
       <h2>ENTREGA INMEDIATA</h2>
@@ -73,42 +73,43 @@
       <p>Los juegos que compres en GT Digital Games siempre serán tuyos, en caso de algún problema, nuestro equipo de soporte estará para ti!</p>
     </div>
   </section>
-  <section class="contenedor-newsletter">
+  <section id="newsletter" class="contenedor-newsletter">
     <div>
       <h2>Newsletter</h2>
       <p>Suscribete para recibir actualizaciones de ofertas, cupones de descuento y promociones.</p>
     </div>
     <div>
         <form action="">
-          <input type="text" name="Nombre" placeholder="Nombre" required>
-          <input type="email" name="correo electronico" placeholder="Correo eClectronico" required>
+          <input type="name" name="Nombre" placeholder="Nombre" required>
+          <input type="email" name="correo electronico" placeholder="Email" required>
           <button type="submit">Enviar</button>
     </div>
   </section>
-  <footer class="contenedor-footer">
-    <div>
+  <footer id="footer" class="contenedor-footer">
+    <div class="contenedor-imgLogoFooter">
+      <a href="index.html"><img  class="imgLogo" src="./assets/img/Logo.png" alt="logo-footer-gt-digital-games"></a>
+    </div>
+    <div class="horario">
       <h3>Atención y Soporte Técnico</h3>
       <p>Lunes a Viernes: de 10 hrs a 18 hrs. <br>
         Sabados: 10 hrs a 14 hrs. <br>
         Domingos: No laborable.</p>
     </div>
-    <div>
-      <img  class="imgLogo" src="./assets/img/Logo.png" alt="logo-footer-gt-digital-games">
-    </div>
-  <div class="socialMediaColumn">
+  <section class="socialMediaColumn">
     <div>
       <h2>Redes Sociales</h2>
     </div>
     <div class="socialMediaf">
-      <img class="imgRedSocial" src="./assets/img/facebook.png" alt="facebook">
-      <img class="imgRedSocial" src="./assets/img/instagram.png" alt="instagram">
-      <img class="imgRedSocial" src="./assets/img/whatsapp.png" alt="whatsapp">
-      <img class="imgRedSocial" src="./assets/img/youtube.png" alt="youtube">
+      <a href="http://www.facebook.com"><img class="imgRedSocial" src="./assets/img/facebook.png" alt="facebook"></a>
+      <a href="http://www.instagram.com"><img class="imgRedSocial" src="./assets/img/instagram.png" alt="instagram"></a>
+      <a href="http://www.whatsapp.com"><img class="imgRedSocial" src="./assets/img/whatsapp.png" alt="whatsapp"></a>
+      <a href="http://www.youtube.com"><img class="imgRedSocial" src="./assets/img/youtube.png" alt="youtube"></a>
     </div>
-  </div>  
-  </footer>    
-  <div class="foot">
-    <p>Powered & design by © GT Digital Solutions</p>
+  </section>
+  </footer>
+  <div id="foot" class="foot">
+    <p>Todos los derechos reservados</p> 
   </div>
+</section>  
 </body>
 </html>
