@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
     "foot";
     grid-template-rows: auto;
     grid-template-columns: auto;
-    background-color: #007FE0;
+    
 }
 
 #header {
@@ -126,7 +126,6 @@ body::-webkit-scrollbar-thumb {
     "foot";
     grid-template-rows: auto;
     grid-template-columns: auto;
-    background-color: #007FE0;
 }
 
 #header {
@@ -164,7 +163,6 @@ body::-webkit-scrollbar-thumb {
     "foot";
     grid-template-rows: auto;
     grid-template-columns: auto;
-    background-color: #007FE0;
 }
 
 #header {
@@ -202,7 +200,6 @@ body::-webkit-scrollbar-thumb {
     "foot";
     grid-template-rows: auto;
     grid-template-columns: auto;
-    background-color: #007FE0;
 }
 
 #header {
@@ -215,6 +212,48 @@ body::-webkit-scrollbar-thumb {
 
 #blog {
     grid-area: blog;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid Ps4 */
+
+#grid-ps4 {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "ps4"
+    "ps4_1"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#ps4 {
+    grid-area: ps4;
+}
+
+#ps4_1 {
+    grid-area: ps4_1;
 }   
 
 #footer {
@@ -492,7 +531,7 @@ nav ul li:hover {
     margin: 2.5rem;
 }
 
-/* Contenedor Newsletter */
+/* Newsletter */
 
 .contenedor-newsletter {
     width: 100%;
@@ -753,18 +792,32 @@ text-shadow: .625rem .625rem .625rem black
 
 /* Tienda */
 
-.header-tienda {
+.contenedor-tienda {
+    padding: 3.125rem;
+    background-image: url("../assets/img/fondo_tienda.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
     width: 100%;
-    padding: 1.875rem;
-    background-color: #007FE0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.header-tienda h2 {
+    padding: 2.5rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: .3125rem .3125rem .75rem black;
 }
 
 .background_img {
     
+    margin: auto;
     background-image: url("../assets/img/controlblancops5.jpg");
     width: 44.6875rem;
     height: 9.375rem;
@@ -772,37 +825,31 @@ text-shadow: .625rem .625rem .625rem black
     background-size: 75rem 37.5rem ;
     background-repeat: no-repeat;
     background-position: top;
-    margin: 1.875rem;
     border-radius: .625rem;
     box-shadow: 0 0 .75rem 1rem rgb(255, 255, 255);
     
 }
 
-.header-tienda h2 {
-    padding: 1.875rem;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: .3125rem .3125rem .75rem black;
-}
-.contenedor-tienda {
-    background: #007FE0;
-    width: 80%;
-    height: 100%;
-    padding: 7.5rem;
-    margin: auto;
+.contenedor-card {
+
+    width: 70%;
+    height: auto;
+    padding: 6.25rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 4.375rem
-    
+    gap: 3.125rem;
 }
 
 .card {
     max-width: 13.125rem;
     padding: .9375rem;
     background-color: black;
+    display: flex;
+    flex-direction: column;
     border-radius: 1.875rem;
     text-align: center;
     color: white;
