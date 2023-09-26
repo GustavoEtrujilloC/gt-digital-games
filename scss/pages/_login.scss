@@ -1,0 +1,125 @@
+/* Login */
+
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../assets/img/fondo_login.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 26.25rem;
+    background-color: transparent;
+    color: $white_light;
+    border-radius: .625rem;
+    padding: 1.875rem;
+    border: .125rem solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(1.25rem);
+
+}
+
+.box h1 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.box .input {
+    width: 100%;
+    height: 50%;
+    margin: 1.875rem 0;
+
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2) ;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    color: $white_light;
+    padding: 1.25rem 2.8125rem 1.25rem 1.25rem;
+}
+
+.input input::placeholder {
+    color: $white_light;
+
+}
+
+.input input:focus {
+    border: .125rem solid $white_light;
+    background-color: $orange_dark;
+    transition: 1s;
+}
+
+.box .recordar {
+    display: flex;
+    justify-content: space-between;
+    font-size: .875rem;
+    margin: -0.9375rem 0 .9375rem;
+}
+
+.recordar label input {
+    accent-color: $orange ;
+    margin-right: 3px;
+}
+
+.recordar a {
+    color: $white_light;
+    text-decoration: none;
+
+}
+
+.recordar a:hover {
+    text-decoration: underline;
+}
+
+.box .btn_login {
+    width: 100%;
+    height: 2.8125rem;
+    background-color: $white_light;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.btn_login:hover {
+    box-shadow: 0 0 .5rem .0187rem white;
+    background-color: $orange;
+    color: white;
+    font-weight: bold;
+}
+
+.box .registrate {
+    font-size: .9063rem;
+    text-align: center;
+    margin-top: 1.25rem 0 .9375rem;
+}
+
+.registrate a {
+    color: $white_light;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrate p {
+    margin-top: 1.25rem;
+}
+
+.registrate p a:hover {
+    text-decoration: underline;
+
+}

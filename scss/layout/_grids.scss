@@ -1,0 +1,242 @@
+/* Grid main */
+
+#grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "principal"
+    "service"
+    "newsletter"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#principal {
+    grid-area: principal;
+}   
+
+#service {
+    grid-area: service;
+}   
+
+#newsletter {
+    grid-area: newsletter;
+}
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+}   
+
+/* Grid Tienda */
+
+#grid-tienda {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "header-tienda"
+    "tienda"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#headerStore {
+    grid-area: header-tienda;
+}   
+
+#tiendappal {
+    grid-area: tienda;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid Contacto */
+
+#grid-contacto {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "contacto"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#contacto {
+    grid-area: contacto;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid login */
+
+#grid-login {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "login"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#login {
+    grid-area: login;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid Blog */
+
+#grid-blog {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "blog"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#blog {
+    grid-area: blog;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid Ps4 */
+
+#grid-ps4 {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "ps4"
+    "ps4_1"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#ps4 {
+    grid-area: ps4;
+}
+
+#ps4_1 {
+    grid-area: ps4_1;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
