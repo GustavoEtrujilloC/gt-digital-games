@@ -420,7 +420,7 @@ nav ul li:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("/assets/img/fondo_main.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo_main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -503,7 +503,7 @@ nav ul li:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("/assets/img/fondo_contacto.jpg");
+  background-image: url("../assets/img/fondo_contacto.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -542,7 +542,7 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url("/assets/img/fondo_newsletter.webp");
+  background-image: url("../assets/img/fondo_newsletter.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
