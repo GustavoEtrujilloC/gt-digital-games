@@ -1,16 +1,15 @@
 /* main */
 
 .contenedor-main {
-    background: radial-gradient(#E09900 50%, black);
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 3.75rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/fondo_main.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("/assets/img/fondo_main.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,7 +20,7 @@
     width: 100%;   
     font-weight: 900;
     font-size: 2.5rem;
-    color: white;
+    color: $white_light;
     text-align: center;
     text-shadow: 6px 6px 8px black;
     
@@ -91,15 +90,15 @@
 .contenedor-service {
 
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 6.25rem 6.25rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     background-image: url("/assets/img/fondo_contacto.jpg");
-    background-size: fill;
+    background-size: cover;
     background-attachment: fixed;
 
     
@@ -107,7 +106,7 @@
 }
 
 .service {
-    color: white;
+    color: $white_light;
     max-width: 21.875rem;
     padding: .9375rem;
     text-align: justify;
@@ -135,7 +134,7 @@
 
 .contenedor-newsletter {
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 18.75rem;
     display: flex;
     flex-direction: column;
@@ -164,7 +163,7 @@
 
 .contenedor-newsletter h2 {
 
-color: white;
+color: $white_light;
 font-size: 4.375rem;
 font-weight: 900;
 text-transform: uppercase;
@@ -173,7 +172,7 @@ text-shadow: .625rem .625rem .625rem black
 
 .contenedor-newsletter p  {
 
-    color: rgb(255, 255, 255);
+    color: $white_light;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: .125rem;
@@ -192,11 +191,11 @@ text-shadow: .625rem .625rem .625rem black
 }
 
 .contenedor-newsletter input::placeholder {
-    color: white;
+    color: $white_light;
 }
 
 .contenedor-newsletter input:focus {
-    background-color: #E09900;
+    background-color: $orange;
     transition: 1s;
 }
 
@@ -205,21 +204,21 @@ text-shadow: .625rem .625rem .625rem black
 }
 
 .contenedor-newsletter input:invalid {
-    border: 2px solid red;
+    border: 2px solid $red;
 }
 
 
 .contenedor-newsletter button {
     padding: .5rem;
     background-color: black;
-    color: white;
-    border: solid .0938rem white;
+    color: $white_light;
+    border: solid .0938rem $white_light;
     border-radius: .3125rem;
     transition: 0.9s;
 }
 
 .contenedor-newsletter button:hover {
-    background-color: #E09900;
+    background-color: $orange;
     color: black;
     border: solid 2px black;
     cursor: pointer;

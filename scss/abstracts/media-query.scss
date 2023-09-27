@@ -265,6 +265,14 @@
         font-size: .9375rem;
     
     }
+
+    // Contacto
+
+    .contenedor-contacto form {
+        width: 80%;
+        height: auto;
+        padding: 6.25rem 0;
+    }
             
         /* Service */
     
@@ -679,7 +687,8 @@
     
     .contenedor-contacto form {
         width: 80%;
-        height: 80%;
+        height: auto;
+        padding: 6.25rem 0;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -1060,7 +1069,8 @@
     
     .contenedor-contacto form {
         width: 80%;
-        height: 80%;
+        height: auto;
+        padding: 6.25rem 0;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -1440,7 +1450,8 @@
     
     .contenedor-contacto form {
         width: 80%;
-        height: 80%;
+        height: auto;
+        padding: 6.25rem 0;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -1811,8 +1822,9 @@
     /* Contacto */
     
     .contenedor-contacto form {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: auto;
+        padding: 7.5rem 0;
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -1838,7 +1850,7 @@
     }
     
     .contenedor-contacto form h4 {
-        color: white;
+        color: $white_light;
         font-weight: 300;
         width: 80%;
         margin-top: 1.25rem;
@@ -1859,12 +1871,9 @@
     /* Tienda */
     
     .header-tienda {
-    
+            padding-top: 4.375rem;
         
-        padding-top: 4.375rem ;
-        
-    }
-    
+}
     .background_img {
         
         
@@ -1876,13 +1885,13 @@
         width: 100%;
         margin-top: 1.25rem;
         padding: 0;
-        font-size: 1.5625rem;
+        font-size: 1.875rem;
         text-align: center;
     }
     .contenedor-tienda {
         width: 100%;
         height: 100%;
-        padding: 3.125rem;
+        padding: 3.125rem 0;
         gap: 3.4375rem;
         
     }
@@ -1900,7 +1909,7 @@
     }
     
     .card h3 {
-        font-size: .9375rem;
+        font-size: .932075rem;
         font-weight: bold;
     }
     
