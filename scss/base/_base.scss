@@ -1,0 +1,17 @@
+#header_movil {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    width: .875rem;               /* width de la barra */
+}
+
+body::-webkit-scrollbar-track {
+    background: $black_light;        /* color de fondo de la barra */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $blue_light;    /* color del fondo de la barra */
+    border-radius: 20px;       /* radio del borde de la barra */
+    border: 3px solid $mustard;  /* borde de la barrs */
+}

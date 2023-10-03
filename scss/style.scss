@@ -1,3 +1,5 @@
+// $ sass --watch ./scss/style.scss ./css/style.css
+
 @import "./abstracts/variables";
 @import "./base/reset";
 @import "./base/base";
@@ -5,17 +7,22 @@
 
 
 
+
 @import "./abstracts/colors";
 
-
+@import "./components/carrousel_h1_main";
+@import "./components/cardTienda";
+@import "./components/text_animation";
+@import "./components/animation";
+@import "./components/waves";
 @import "./components/buttons";
-@import "./components/carousel";
 @import "./components/dropdown";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/grids";
 @import "./layout/sidebar";
+
 
 
 @import "./pages/index";

@@ -1,6 +1,8 @@
 /* main */
 
 .contenedor-main {
+    position: relative;
+    
     width: 100%;
     height: auto;
     padding: 3.75rem;
@@ -14,26 +16,13 @@
     background-attachment: fixed;
 }
 
-.contenedor-main h1 {
-    
-    margin-bottom: 5rem;
-    width: 100%;   
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: $white_light;
-    text-align: center;
-    text-shadow: 6px 6px 8px black;
-    
-    
-}
-
 .imgMenu {
     max-width: 13.4375rem;
     max-height: 22.1875rem;
     border-radius: 1.25rem;
     box-shadow: .5rem .5625rem .75rem rgb(0, 0, 0) ;
     margin: 1.25rem;
-    transition: 0.5s;
+    transition: 0.8s ease-in-out;
 }   
 
 .imgMenu:hover {
@@ -47,7 +36,7 @@
     border-radius: 1.25rem;
     box-shadow: .5rem .5625rem .75rem rgb(0, 0, 0);
     margin: 1.25rem;
-    transition: 0.5s;
+    transition: 0.8s ease-in-out;
 }
 
 .imgMenuLateral:hover {
@@ -97,7 +86,7 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
-    background-image: url("../assets/img/fondo_contacto.jpg");
+    background-image: url("../assets/img/fondo_service.jpg");
     background-size: cover;
     background-attachment: fixed;
 
@@ -158,6 +147,11 @@
     justify-content: center;
     flex-wrap: wrap;
     backdrop-filter: blur(1.25rem);
+    transition: 1s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 1.25rem .625rem $white_light;
+        transform: translateY(-0.625rem);
+    }
 }
 
 
@@ -196,7 +190,7 @@ text-shadow: .625rem .625rem .625rem black
 
 .contenedor-newsletter input:focus {
     background-color: $orange;
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
 .contenedor-newsletter input:valid {
@@ -214,7 +208,7 @@ text-shadow: .625rem .625rem .625rem black
     color: $white_light;
     border: solid .0938rem $white_light;
     border-radius: .3125rem;
-    transition: 0.9s;
+    transition: 0.9s ease-in-out;
 }
 
 .contenedor-newsletter button:hover {
