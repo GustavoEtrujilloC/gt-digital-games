@@ -10,9 +10,7 @@
 
 @import "./abstracts/colors";
 
-@import "./components/carrousel_h1_main";
-@import "./components/cardTienda";
-@import "./components/text_animation";
+@import "./components/cardStore";
 @import "./components/animation";
 @import "./components/waves";
 @import "./components/buttons";
@@ -30,6 +28,7 @@
 @import "./pages/login";
 @import "./pages/store";
 @import "./pages/blog";
+@import "./pages/faq";
 
 @import "./abstracts/media-query.scss"
 

@@ -45,16 +45,16 @@
     width: 100%;
 }   
 
-/* Grid Tienda */
+/* Grid store */
 
-#grid-tienda {
+#grid-store {
     display: grid;
     grid-template-areas: 
     
     "header"
     "header_movil"
-    "header-tienda"
-    "tienda"
+    "header-store"
+    "store"
     "footer"
     "foot";
     grid-template-rows: auto;
@@ -71,11 +71,11 @@
 }
 
 #headerStore {
-    grid-area: header-tienda;
+    grid-area: header-store;
 }   
 
-#tiendappal {
-    grid-area: tienda;
+#storeppal {
+    grid-area: store;
 }   
 
 #footer {
@@ -229,6 +229,49 @@
 
 #ps4_1 {
     grid-area: ps4_1;
+}   
+
+#footer {
+    grid-area: footer;
+}   
+
+#foot {
+    grid-area: foot;
+    width: 100%;
+
+}
+
+/* Grid store */
+
+#grid-faq {
+    display: grid;
+    grid-template-areas: 
+    
+    "header"
+    "header_movil"
+    "header_faq"
+    "faq"
+    "footer"
+    "foot";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+}
+
+#header {
+    grid-area: header;   
+}
+
+#header_movil {
+    grid-area: header_movil;
+}
+
+#header_faq {
+    grid-area: header_faq;
+}   
+
+#faq {
+    grid-area: faq;
 }   
 
 #footer {

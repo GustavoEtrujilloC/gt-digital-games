@@ -16,6 +16,52 @@
     background-attachment: fixed;
 }
 
+.carrousel_h1 {
+    padding: 3.125rem 0;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 12.5rem; 
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: $white_light;
+    text-align: center;
+    text-shadow: 6px 6px 8px black;
+    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    .pre {
+        padding: .25rem;
+        height: 7vh;
+        position: absolute;
+        right: 45%;
+    }
+    .out {
+        position: absolute;
+        padding: .25rem;
+        left: 55%;
+        text-align: left;
+        overflow: hidden;
+        .inner {
+            position: relative;
+            margin-left: .3125rem;
+            height: 7vh;
+            animation: rotate_h1 7s ease-in-out infinite;
+            animation-delay: 2s;
+            .element {
+                font-weight: 900;
+                font-size: 2.5rem;
+                text-align: center;
+                text-shadow: 6px 6px 8px black;
+                color: $white_light;                
+                overflow: hidden;
+            }
+            
+            }
+        }
+    }
+
+
+	
+
 .imgMenu {
     max-width: 13.4375rem;
     max-height: 22.1875rem;

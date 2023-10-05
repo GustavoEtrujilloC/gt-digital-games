@@ -1,0 +1,93 @@
+.background_faq {
+    background-image: url("../assets/img/fondo_faq.webp");
+    background-size: fill;
+    height: auto;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.faq_h1 {
+    padding: 1.5625rem 0 3.125rem 0;
+    margin: 2.5rem auto;
+    width: 80%;
+    height: 12.5rem; 
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: $white_light;
+    text-align: center;
+    text-shadow: 6px 6px 8px black;
+    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    span {
+        font-size: 4.375rem;
+        font-weight: bold;
+    }
+}
+
+.container_faq {
+    width: 60%;
+    margin: 3.75rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    backdrop-filter: blur(1.875rem);
+    border-radius: .625rem;
+    border: .0625rem solid rgba(255, 255, 255, 1);
+    .acordeon_1 {
+        width: 50%;
+        h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: $white_light;
+            letter-spacing: .0313rem;
+            padding: 1.25rem;
+        }
+        details {
+            position: relative;
+            margin: 1.25rem;            
+        &[open] summary ~ * {
+            animation: faq .8s ease-in-out;
+        }
+            summary {
+                width: 100%;
+                text-align: center;
+                padding: .625rem 0;
+                font-size: .875rem;
+                font-weight: 100;
+                letter-spacing: .025rem;
+                color: $white_light;
+                list-style: none;
+                background-color: $black_light;
+                border: .0625rem solid $white_light;
+                border-radius: .625rem;
+                cursor: pointer;
+                transition: 1s ease-in-out;
+                &:hover {
+                    background-color: $orange_dark;
+                    box-shadow: 0 0 1.25rem .625rem $white_light;
+                    transform: translateY(-0.625rem);
+            
+                }
+                
+            }
+            
+            p {
+                text-align: justify;
+                color: $white_light;
+                font-size: .875rem;
+                font-weight: 200;
+                padding: .5rem;
+                }
+               
+            }
+
+        }
+
+    }
+
+.acordeon_2 {
+    @extend .acordeon_1
+}
+
+

@@ -61,7 +61,11 @@
     padding: 20px;
 }
 
-.horario h3, p {
+.horario {
+    padding: .625rem;
     text-align: center;
-    
+    img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
 }

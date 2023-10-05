@@ -46,3 +46,30 @@
     }
 
 }
+
+// Animacion acordeon de FAQ
+
+@keyframes faq {
+    0%   {opacity: 0; margin-left: -10px
+    }
+
+    100%  {
+        opacity: 1; margin-left: 0px
+    }
+  }
+
+//   Animacion de Texto H1 de Main
+
+@keyframes textoH1 {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

@@ -4,6 +4,7 @@
     background-color: black;
     height: 5rem;
     color: $white_light;
+    
 }
 
 .nav_logo {
@@ -20,6 +21,7 @@
 
 .nav_img { 
     margin-right: auto .5625rem;
+    cursor: pointer;
 }
 
 .nav_label, .nav_input {
@@ -27,7 +29,7 @@
 }
 
 .nav_menu {
-    z-index: 20;
+    z-index: 200;
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
@@ -110,6 +112,10 @@
 
 nav ul li, a {
     transition: 0.8s;
+    text-transform: uppercase;
+    &:hover {
+    color: $orange;
+    }
 }
 
 nav ul li a:link {
