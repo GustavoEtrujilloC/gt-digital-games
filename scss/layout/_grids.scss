@@ -207,8 +207,8 @@
     
     "header"
     "header_movil"
+    "ps4_header"
     "ps4"
-    "ps4_1"
     "footer"
     "foot";
     grid-template-rows: auto;
@@ -223,12 +223,12 @@
     grid-area: header_movil;
 }
 
-#ps4 {
-    grid-area: ps4;
+#ps4_header {
+    grid-area: ps4_header;
 }
 
-#ps4_1 {
-    grid-area: ps4_1;
+#ps4 {
+    grid-area: ps4;
 }   
 
 #footer {
