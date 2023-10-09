@@ -1537,15 +1537,15 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/img/carrousel_1.svg");
+  background-image: url("../assets/img/carrousel_1.svg");
   background-size: cover;
 }
 .container_ps4 .slider .content_ps4 .slide_2 {
-  background-image: url("/assets/img/carrousel_2.svg");
+  background-image: url("../assets/img/carrousel_2.svg");
   background-size: cover;
 }
 .container_ps4 .slider .content_ps4 .slide_3 {
-  background-image: url("/assets/img/carrousel_3.svg");
+  background-image: url("../assets/img/carrousel_3.svg");
   background-size: cover;
 }
 

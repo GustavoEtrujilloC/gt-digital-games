@@ -80,17 +80,17 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-image: url("/assets/img/carrousel_1.svg");
+                background-image: url("../assets/img/carrousel_1.svg");
                 background-size: cover;
             }
             .slide_2 {
                 @extend .slide_1;
-                background-image: url("/assets/img/carrousel_2.svg");
+                background-image: url("../assets/img/carrousel_2.svg");
                 background-size: cover;
             }
             .slide_3 {
                 @extend .slide_1;
-                background-image: url("/assets/img/carrousel_3.svg");
+                background-image: url("../assets/img/carrousel_3.svg");
                 background-size: cover;
             }
         }
