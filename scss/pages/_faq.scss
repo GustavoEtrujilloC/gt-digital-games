@@ -6,16 +6,7 @@
     background-repeat: no-repeat;
 }
 .faq_h1 {
-    padding: 1.5625rem 0 3.125rem 0;
-    margin: 2.5rem auto;
-    width: 80%;
-    height: 12.5rem; 
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: $white_light;
-    text-align: center;
-    text-shadow: 6px 6px 8px black;
-    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    @include h1 ();
     span {
         font-size: 4.375rem;
         font-weight: bold;
@@ -25,11 +16,7 @@
 .container_faq {
     width: 60%;
     margin: 3.75rem auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: start;
+    @include flexbox (flex, row, wrap, center, start);
     backdrop-filter: blur(1.875rem);
     border-radius: .625rem;
     border: .0625rem solid rgba(255, 255, 255, 1);

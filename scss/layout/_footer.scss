@@ -1,71 +1,62 @@
 /* Footer */
 
 .contenedor-footer {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    color: white;
-}
-
-.socialMediaf {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 12.5rem;
+background-color: black;
+@include flexbox (flex, row, wrap, space-around, center);
+color: white;
+    .contenedor-imgLogoFooter {
     max-width: 22.5rem;
-    min-width: 22.5rem;
+    height: 100%;
     display: flex;
-    flex-basis: 25%;
-    flex-direction: row;
-    justify-content: center;
-    gap: .75rem;
-
+    flex-basis: 50%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
-
-.socialMediaColumn {
-    max-width: 22.5rem;
-    display: flex;
-    flex-basis: 25%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-.imgRedSocial {
-    max-width: 1.875rem;
-    max-height: 1.875rem;
-    transition: 0.8s;
-}
-
-.imgRedSocial:hover {
-    filter: drop-shadow(.0 .0 .5rem white) drop-shadow(.0 .0 .5rem white) drop-shadow(.0 .0 .5rem white);
-    transform: scale(1.3, 1.3);
-}
-
-.contenedor-imgLogoFooter {
-    max-width: 22.5rem;
-    display: flex;
-    flex-basis: 25%;
-}
-
-.foot {
-    background-color: black;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.horario {
+    .horario {
     padding: .625rem;
     text-align: center;
     img {
-        width: 6.25rem;
-        height: 6.25rem;
+    width: 6.25rem;
+    height: 3.125rem;
     }
+}
+.socialMediaColumn {
+max-width: 22.5rem;
+@include flexbox (flex, column, wrap, center, center);
+flex-basis: 25%;
+    .socialMediaf {
+    max-width: 22.5rem;
+    min-width: 22.5rem;
+    @include flexbox (flex, row, wrap, center, center);
+    flex-basis: 25%;
+    gap: .75rem;
+        .imgRedSocial {
+            max-width: 1.875rem;
+            max-height: 1.875rem;
+            transition: 0.8s;
+            &:hover {
+            filter: drop-shadow(0 0 0.5rem white) drop-shadow(0 0 0.5rem white) drop-shadow(0 0 0.5rem white);
+            transform: scale(1.3, 1.3);
+}
+}
+}
+}
+
+.foot {
+background-color: black;
+width: 100%;
+font-weight: bold;
+text-align: center;
+color: white;
+padding: 20px;
+}
+
+
 }

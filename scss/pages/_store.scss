@@ -1,42 +1,37 @@
 /* store */
 
 .contenedor-store {
-    padding: 3.125rem;
-    background-image: url("../assets/img/fondo_tienda.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+padding: 3.125rem;
+background-image: url("../assets/img/fondo_tienda.jpg");
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+@include flexbox (flex, column, wrap, center, center);
+    .header-store {
+        padding: 3.125rem 0;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 12.5rem; 
+        h2 {
+            @include h1 ();
+
+    }
+}
+    .background_img {
+        margin: auto;
+        background-image: url("../assets/img/controlblancops5.jpg");
+        width: 44.6875rem;
+        height: 9.375rem;
+        background-attachment: fixed;
+        background-size: 75rem 37.5rem ;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-radius: .625rem;
+        box-shadow: 0 0 .75rem 1rem rgb(255, 255, 255);
+}
 }
 
-.header-store h2 {
-    padding: 2.5rem;
-    color: $white_light;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: .3125rem .3125rem .75rem black;
-}
-
-.background_img {
-    
-    margin: auto;
-    background-image: url("../assets/img/controlblancops5.jpg");
-    
-    width: 44.6875rem;
-    height: 9.375rem;
-    background-attachment: fixed;
-    background-size: 75rem 37.5rem ;
-    background-repeat: no-repeat;
-    background-position: top;
-    border-radius: .625rem;
-    box-shadow: 0 0 .75rem 1rem rgb(255, 255, 255);
-    
-}
 

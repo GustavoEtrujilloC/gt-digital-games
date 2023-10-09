@@ -2,32 +2,17 @@
 
 .contenedor-main {
     position: relative;
-    
     width: 100%;
     height: auto;
     padding: 3.75rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flexbox (flex, row, wrap, space-evenly, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo_main.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
 .carrousel_h1 {
-    padding: 3.125rem 0;
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: 12.5rem; 
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: $white_light;
-    text-align: center;
-    text-shadow: 6px 6px 8px black;
-    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    @include h1 ();
     .pre {
         padding: .25rem;
         height: 7vh;
@@ -111,12 +96,8 @@
 }
 
 .contenedor-columnaImgLateral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox (flex, column, wrap, center, center);
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
     gap: 4.375rem;
 }
 
@@ -127,11 +108,7 @@
     width: 100%;
     height: auto;
     padding: 6.25rem 6.25rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
+    @include flexbox (flex, row, wrap, space-evenly, center);
     background-image: url("../assets/img/fondo_service.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -145,10 +122,7 @@
     max-width: 21.875rem;
     padding: .9375rem;
     text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox (flex, column, nowrap, center, center);
     transition: 0.8s;
     backdrop-filter: blur(1.25rem);
     border-radius: .625rem;
@@ -171,11 +145,7 @@
     width: 100%;
     height: auto;
     padding: 18.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flexbox (flex, column, wrap, center, center);
     background-image: url("../assets/img/fondo_newsletter.webp");
     background-position: center;
     background-size: cover;
@@ -184,14 +154,10 @@
 }
 
 .contenedor_form {
-    display: flex;
     padding: 3.125rem;
     border-radius: .9375rem;
     border: .0625rem solid rgba(255, 255, 255, 0.1);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flexbox (flex, column, wrap, center, center);
     backdrop-filter: blur(1.25rem);
     transition: 1s ease-in-out;
     &:hover {

@@ -1,20 +1,16 @@
 /* Contacto*/
 
 .contenedor-contacto {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-image: url("../assets/img/fondo_contacto.jpg");
-    background-size: cover;
-    background-position: right;
-    background-attachment: fixed;
-
-
-}
-
-.contenedor-contacto form {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+background-image: url("../assets/img/fondo_contacto.jpg");
+background-size: cover;
+background-position: right;
+background-attachment: fixed;
+    form {
     width: 41.875rem;
     height: 25rem;
     display: flex;
@@ -24,89 +20,83 @@
     flex-wrap: wrap;
     background-color: transparent;
     backdrop-filter: blur(3.75rem);
-
+        h1 {
+        color: $white_light;
+        font-weight: bold;
+        margin-top: 1.25rem;
+        width: 31.25rem;
+        text-align: center;
+        font-size: 1.875rem;
+        }
+        input {
+        width: 18.125rem;
+        height: 2.5rem;
+        padding-left: .625rem;
+        outline: none;
+        border: none;
+        font-size: .9375rem;
+        margin-bottom: .625rem;
+        background: none;
+        border-bottom: .125rem solid $white_light;
+        transition: 1s;
+        &::placeholder {
+        color: $white_light;                
+        }
+        &:focus {
+        border-bottom: .125rem solid $mustard;
+        }
+        }
+        textarea {
+        background: none;
+        border: none;
+        border-bottom: .125rem solid $white_light;
+        color: $white_light;
+        font-weight: 200;
+        font-size: .9375rem;
+        padding: .625rem;
+        outline: none;
+        min-width: 37.5rem;
+        max-width: 37.5rem;
+        min-height: 5rem;
+        max-height: 5rem;
+        transition: 1s;
+        &:focus {
+        border-bottom: .125rem solid $mustard;
+        }
+        }   
+        h4 {
+        color: $white_light;
+        font-weight: 300;
+        width: 37.5rem;
+        margin-top: 1.25rem;
+        }
+        #button {
+        border: none;
+        cursor: pointer;
+        background-color: $white_light;
+        border-radius: .3125rem;
+        margin-top: 1.25rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #000000;
+        width: 6.25rem;
+        padding: 0;
+        margin-right: 31.25rem;
+        margin-bottom: 1.875rem;
+        transition: 1s;
+        &:hover {
+        opacity: 0.7;
+        }
+        }
+        #apellido {
+        margin-left: 1.25rem;  
+        }
+        #movil {
+        @extend #apellido ;
+        }
+    }
 }
 
-.contenedor-contacto form h1 {
-    color: $white_light;
-    font-weight: bold;
-    margin-top: 1.25rem;
-    width: 31.25rem;
-    text-align: center;
-    font-size: 1.875rem;
-}
-
-.contenedor-contacto form input {
-    width: 18.125rem;
-    height: 2.5rem;
-    padding-left: .625rem;
-    outline: none;
-    border: none;
-    font-size: .9375rem;
-    margin-bottom: .625rem;
-    background: none;
-    border-bottom: .125rem solid $white_light;
-    transition: 1s;
-}
-
-.contenedor-contacto form input:focus {
-    border-bottom: .125rem solid $mustard;
-    
-}
-
-.contenedor-contacto form textarea:focus {
-    border-bottom: .125rem solid $mustard;
-}
 
 
-.contenedor-contacto form input::placeholder {
-    color: $white_light;
-        
-}
 
-.contenedor-contacto #apellido, .contenedor-contacto #movil {
-    margin-left: 1.25rem;
-}
-
-.contenedor-contacto form h4 {
-    color: $white_light;
-    font-weight: 300;
-    width: 37.5rem;
-    margin-top: 1.25rem;
-
-}
-
-.contenedor-contacto form textarea {
-    background: none;
-    border: none;
-    border-bottom: .125rem solid $white_light;
-    color: $white_light;
-    font-weight: 200;
-    font-size: .9375rem;
-    padding: .625rem;
-    outline: none;
-    min-width: 37.5rem;
-    max-width: 37.5rem;
-    min-height: 5rem;
-    max-height: 5rem;
-    transition: 1s;
-}
-
-.contenedor-contacto #button {
-    border: none;
-    cursor: pointer;
-    background-color: $white_light;
-    border-radius: .3125rem;
-    margin-top: 1.25rem;
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: #000000;
-    width: 6.25rem;
-    padding: 0;
-    margin-right: 31.25rem;
-    margin-bottom: 1.875rem;
-    transition: 1s;
-
-}.contenedor-contacto form #button:hover {
-    opacity: 0.7;
-}

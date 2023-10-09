@@ -11,12 +11,9 @@
     align-content: center;
     flex-wrap: wrap;
     gap: 3.125rem;
-    
-    }
-    
     .card {
         background-color: $black_light;
-        width: 20rem;
+        width: 18.75rem;
         height: 31.25rem;
         position: relative;
         border-radius: 1.25rem;
@@ -30,7 +27,7 @@
             height: 100%;
             clip-path: circle(9.375rem at 20% 5%);
             transition: 1s ease-in-out;
-        }
+            }
         &:hover {
             box-shadow: .125rem .1875rem .625rem 1rem white;
 
@@ -143,34 +140,34 @@
                     opacity: 0;
                     visibility: hidden;
                     span {
-                        width: 100%;
-                        color: $red;
-                        font-size: 1.125rem;
-                        padding: .0625rem .125rem;
-                        cursor: auto;
-                        background-color: transparent;
+                    width: 100%;
+                    color: $red;
+                    font-size: 1.125rem;
+                    padding: .0625rem .125rem;
+                    cursor: auto;
+                    background-color: transparent;
                     }
 
             }
         }
 
         a {
-            margin: 0;
-            display: inline-block;
-            padding: .625rem 1.875rem;
-            background-color: $red ;
-            border-radius: .25rem;
-            text-decoration: none;
-            font-weight: bold;
-            color: $white_light;
-            font-size: 1.125rem;
-            transform: translateY(3.125rem);
-            transition: 0.5s;
-            opacity: 0;
-            &:hover {
-               background-color: $orange;
-               box-shadow: .0625rem .0625rem .3125rem .3125rem rgb(204, 195, 195);;
-            }
+        margin: 0;
+        display: inline-block;
+        padding: .625rem 1.875rem;
+        background-color: $red ;
+        border-radius: .25rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: $white_light;
+        font-size: 1.125rem;
+        transform: translateY(3.125rem);
+        transition: 0.5s;
+        opacity: 0;
+        &:hover {
+        background-color: $orange;
+        box-shadow: .0625rem .0625rem .3125rem .3125rem rgb(204, 195, 195);;
+        }
            
 
         }
@@ -179,3 +176,4 @@
 
 
     }
+}
