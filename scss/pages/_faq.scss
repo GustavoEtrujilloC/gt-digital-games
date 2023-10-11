@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 .faq_h1 {
-    @include h1 ();
+    @include h1 ();    
     span {
         font-size: 4.375rem;
         font-weight: bold;

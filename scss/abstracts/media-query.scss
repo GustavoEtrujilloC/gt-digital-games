@@ -38,7 +38,16 @@
     
     }
 
+
+    .faq_h1 {
+        position: relative;
+        top: 0;
+        }
+    
 }
+
+
+
 
 
 
@@ -134,7 +143,7 @@
         flex-basis: 50%;
     }
     
-    }
+    
 
     // Footer
 
@@ -147,7 +156,90 @@
         color: white;
 
         }
+    }
+        
+
+    // FAQ
+
+    .faq_h1 {
+        position: relative;
+        top: 3.75rem;
         }
+        
+                // PS4
+
+                .container_ps4 {
+                    .ps4_header {
+                        h1 {
+                        padding: 6.25rem 0;
+                        font-weight: 600;
+                        font-size: 2.5rem;
+                        color: $white_light;
+                        text-align: center;
+                        text-shadow: 6px 6px 8px black;
+                        animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    }
+                    }
+                .container_slider {
+                    display: none;
+                }
+                
+                .top_10 {
+                    padding: 1.875rem 0;
+                        h2 {
+                            height: 6.25rem;
+                            padding: 1.875rem;
+                            font-size: 2.1875rem;
+                            
+             
+                        }
+                        .top10_flex {
+                            width: 90%;
+                                .ps4_card {
+                                    width: 30%;
+                                    h3 {
+                                        font-weight: 200;
+                                        font-size: 1.25rem;
+                                        }
+                                    img {
+                                        width: 100%;
+                                        max-width: 18.75rem;
+                                        max-height: 18.75rem;
+                                    }
+                
+                                    
+                                }
+                        }
+                }
+                
+                .container_slider_plus {
+                    display: none;
+                }
+                
+                
+                
+                
+                .plus {
+                    h2 {
+                        font-size: 2.1875rem;
+                        height: 6.25rem;
+                        padding: 1.875rem .3125rem;
+                        margin: auto;
+                
+                    }
+                        .plus_flex {
+                            margin: 3.125rem 0;
+                            width: 70%;
+                        }
+                }
+                
+                
+                
+                }
+    
+
+}
+    
     
     
     @media (max-width: 768px) {
@@ -486,6 +578,12 @@
 
         // FAQ
 
+
+    .faq_h1 {
+    position: relative;
+    top: 3.75rem;
+    }
+
     .background_faq {
         background-size: cover;
     }
@@ -496,6 +594,77 @@
             width: 90%;
     }
     }
+
+            // PS4
+
+            .container_ps4 {
+                .ps4_header {
+                    h1 {
+                    padding: 6.25rem 0;
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                    color: $white_light;
+                    text-align: center;
+                    text-shadow: 6px 6px 8px black;
+                    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                }
+                }
+            .container_slider {
+                display: none;
+            }
+            
+            .top_10 {
+                padding: 1.875rem 0;
+                    h2 {
+                        height: 6.25rem;
+                        padding: 1.875rem;
+                        font-size: 1.875rem;
+                        
+         
+                    }
+                    .top10_flex {
+                        width: 60%;
+                            .ps4_card {
+                                width: 60%;
+                                h3 {
+                                    font-weight: 200;
+                                    font-size: .9375rem;
+                                    }
+                                img {
+                                    width: 100%;
+                                    max-width: 18.75rem;
+                                    max-height: 18.75rem;
+                                }
+            
+                                
+                            }
+                    }
+            }
+            
+            .container_slider_plus {
+                display: none;
+            }
+            
+            
+            
+            
+            .plus {
+                h2 {
+                    font-size: 1.875rem;
+                    height: 6.25rem;
+                    padding: 1.875rem .3125rem;
+                    margin: auto;
+            
+                }
+                    .plus_flex {
+                        margin: 3.125rem 0;
+                        width: 70%;
+                    }
+            }
+            
+            
+            
+            }
 
     
     }
@@ -859,6 +1028,12 @@
 
         // FAQ
 
+    .faq_h1 {
+    position: relative;
+    top: 3.75rem;
+    }
+
+    
     .background_faq {
         background-size: cover;
     }
@@ -869,6 +1044,73 @@
             width: 90%;
     }
     }
+
+            // PS4
+
+            .container_ps4 {
+                .ps4_header {
+                    h1 {
+                    padding: 6.25rem 0;
+                    font-weight: 600;
+                    font-size: 1.875rem;
+                    color: $white_light;
+                    text-align: center;
+                    text-shadow: 6px 6px 8px black;
+                    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                }
+                }
+            .container_slider {
+                display: none;
+            }
+            
+            .top_10 {
+                padding: 1.875rem 0;
+                    h2 {
+                        height: 6.25rem;
+                        padding: 1.875rem;
+                        font-size: 1.25rem;
+                        
+         
+                    }
+                    .top10_flex {
+                            .ps4_card {
+                                width: 80%;
+                                h3 {
+                                    font-weight: 200;
+                                    font-size: .9375rem;
+                                    }
+                                img {
+                                    width: 100%;
+                                }
+            
+                                
+                            }
+                    }
+            }
+            
+            .container_slider_plus {
+                display: none;
+            }
+            
+            
+            
+            
+            .plus {
+                h2 {
+                    height: 6.25rem;
+                    padding: 1.875rem .3125rem;
+                    margin: auto;
+            
+                }
+                    .plus_flex {
+                        margin: 3.125rem 0;
+                        width: 80%;
+                    }
+            }
+            
+            
+            
+            }
 
     
     }
@@ -1225,6 +1467,12 @@
 
         // FAQ
 
+    .faq_h1 {
+    position: relative;
+    top: 3.75rem;
+    }
+
+    
     .background_faq {
         background-size: cover;
     }
@@ -1236,7 +1484,72 @@
     }
     }
 
-    
+            // PS4
+
+            .container_ps4 {
+                .ps4_header {
+                    h1 {
+                    padding: 6.25rem 0;
+                    font-weight: 600;
+                    font-size: 1.875rem;
+                    color: $white_light;
+                    text-align: center;
+                    text-shadow: 6px 6px 8px black;
+                    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                }
+                }
+            .container_slider {
+                display: none;
+            }
+            
+            .top_10 {
+                padding: 1.875rem 0;
+                    h2 {
+                        height: 6.25rem;
+                        padding: 1.875rem;
+                        font-size: 1.25rem;
+                        
+         
+                    }
+                    .top10_flex {
+                            .ps4_card {
+                                width: 80%;
+                                h3 {
+                                    font-weight: 200;
+                                    font-size: .9375rem;
+                                    }
+                                img {
+                                    width: 100%;
+                                }
+            
+                                
+                            }
+                    }
+            }
+            
+            .container_slider_plus {
+                display: none;
+            }
+            
+            
+            
+            
+            .plus {
+                h2 {
+                    height: 6.25rem;
+                    padding: 1.875rem .3125rem;
+                    margin: auto;
+            
+                }
+                    .plus_flex {
+                        margin: 3.125rem 0;
+                        width: 80%;
+                    }
+            }
+            
+            
+            
+            }
     
     }    
     
@@ -1596,6 +1909,12 @@
     
         // FAQ
 
+    .faq_h1 {
+    position: relative;
+    top: 3.75rem;
+    }
+
+    
     .background_faq {
         background-size: cover;
     }
@@ -1606,6 +1925,74 @@
             width: 90%;
     }
     }
+
+        // PS4
+
+    .container_ps4 {
+            .ps4_header {
+                h1 {
+                padding: 6.25rem 0;
+                font-weight: 600;
+                font-size: 1.875rem;
+                color: $white_light;
+                text-align: center;
+                text-shadow: 6px 6px 8px black;
+                animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+            }
+        .container_slider {
+            display: none;
+        }
+        
+        .top_10 {
+            padding: 1.875rem 0;
+                h2 {
+                    height: 6.25rem;
+                    padding: 1.875rem;
+                    font-size: 1.25rem;
+                    
+     
+                }
+                .top10_flex {
+                        .ps4_card {
+                            width: 80%;
+                            h3 {
+                                font-weight: 200;
+                                font-size: .9375rem;
+                                }
+                            img {
+                                width: 100%;
+                            }
+        
+                            
+                        }
+                }
+        }
+        
+        .container_slider_plus {
+            display: none;
+        }
+        
+        
+        
+        
+        .plus {
+            h2 {
+                height: 6.25rem;
+                padding: 1.875rem .3125rem;
+                margin: auto;
+        
+            }
+                .plus_flex {
+                    margin: 3.125rem 0;
+                    width: 80%;
+                }
+        }
+        
+        
+        
+        }
+
 
     
     }
@@ -1969,6 +2356,11 @@
 
     // FAQ
 
+    .faq_h1 {
+    position: relative;
+    top: 3.75rem;
+    }
+
     .background_faq {
         background-size: cover;
     }
@@ -1979,6 +2371,73 @@
             width: 90%;
     }
     }
+
+    // PS4
+
+    .container_ps4 {
+            .ps4_header {
+                h1 {
+                padding: 6.25rem 0;
+                font-weight: 600;
+                font-size: 1.875rem;
+                color: $white_light;
+                text-align: center;
+                text-shadow: 6px 6px 8px black;
+                animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+            }
+        .container_slider {
+            display: none;
+        }
+        
+        .top_10 {
+            padding: 1.875rem 0;
+                h2 {
+                    height: 6.25rem;
+                    padding: 1.875rem;
+                    font-size: 1.25rem;
+                    
+     
+                }
+                .top10_flex {
+                        .ps4_card {
+                            width: 80%;
+                            h3 {
+                                font-weight: 200;
+                                font-size: .9375rem;
+                                }
+                            img {
+                                width: 100%;
+                            }
+        
+                            
+                        }
+                }
+        }
+        
+        .container_slider_plus {
+            display: none;
+        }
+        
+        
+        
+        
+        .plus {
+            h2 {
+                height: 6.25rem;
+                padding: 1.875rem .3125rem;
+                margin: auto;
+        
+            }
+                .plus_flex {
+                    margin: 3.125rem 0;
+                    width: 80%;
+                }
+        }
+        
+        
+        
+        }
 
 
     }

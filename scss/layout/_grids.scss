@@ -209,6 +209,9 @@
     "header_movil"
     "ps4_header"
     "ps4"
+    "top10"
+    "sliderPlus"
+    "plus"
     "footer"
     "foot";
     grid-template-rows: auto;
@@ -216,7 +219,7 @@
 }
 
 #header {
-    grid-area: header;   
+    grid-area: header;
 }
 
 #header_movil {
@@ -229,6 +232,18 @@
 
 #ps4 {
     grid-area: ps4;
+} 
+
+#top10 {
+    grid-area: top10;
+}   
+
+#sliderPlus {
+    grid-area: sliderPlus;
+}   
+
+#plus {
+    grid-area: plus;
 }   
 
 #footer {

@@ -1,29 +1,33 @@
-.ps4_header {
-    padding: 3.125rem 0;
-    position: relative;
-    margin: auto;
+.container_ps4 {
+height: auto;
+width: 100%;
+overflow: hidden;
+    .ps4_header {
     width: 100%;
-    height: 12.5rem; 
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: $white_light;
-    text-align: center;
-    text-shadow: 6px 6px 8px black;
-    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../assets/img/control_camuflaje.jpg" );
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+        h1 {
+        padding: 3.125rem 0;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 12.5rem; 
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: $white_light;
+        text-align: center;
+        text-shadow: 6px 6px 8px black;
+        animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    }
 
 
-}
-
-.container_ps4 {
-    // margin-top: 9.375rem;
+.container_slider {
     position: relative;
     width: 100%;
-    height: 37.5rem;
-    overflow: hidden;
+    height: 25rem;
     .slider {
         input {
             display: none;
@@ -74,25 +78,197 @@
             display: flex;
             transition: 1s ease-in-out;
             .slide_1 {
-                position: relative;
-                width: 100vw;
-                height: 37.5rem;
+                width: 100%;
+                height: 25rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-image: url("../assets/img/carrousel_1.svg");
+                background-image: url("../assets/img/1.png");
                 background-size: cover;
             }
             .slide_2 {
                 @extend .slide_1;
-                background-image: url("../assets/img/carrousel_2.svg");
+                background-image: url("../assets/img/2.png");
                 background-size: cover;
             }
             .slide_3 {
                 @extend .slide_1;
-                background-image: url("../assets/img/carrousel_3.svg");
+                background-image: url("../assets/img/3.png");
                 background-size: cover;
             }
         }
     }
+}
+
+.top_10 {
+    padding: 6.25rem 0;
+    background-image: url("../assets/img/fondo_ps4_top10.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: fill;
+    position: relative;
+    width: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    padding: 3.125rem 0 9.375rem 0;
+        h2 {
+            @include h1 ();
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo_ps4_top10.webp");
+            height: 9.375rem;
+            margin: 1.875rem auto;
+            padding: 3.125rem;
+        }
+        .top10_flex {
+            padding: 3.125rem 0;
+            width: 90%;
+            height: 100%;
+            backdrop-filter: blur(1.25rem);
+            border: .0625rem solid rgba(255, 255, 255, 0.5);
+            @include flexbox (flex, row, wrap, center, center);
+            gap: 2.5rem;
+            border-radius: .9375rem;
+                .ps4_card {
+                    background-color: $black_light;
+                    border-radius: .9375rem;
+                    padding: .625rem;
+                    transition: 0.5s ease-in-out;
+                    &:hover {
+                        box-shadow: .125rem .1875rem .625rem 1rem white;
+                        cursor: pointer;
+                        transform: translateY(-0.9375rem);
+                        h3 {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                            padding: .625rem 0;
+                        }
+                    }
+                    h3 {
+                        text-transform: uppercase;
+                        color: $white_light;
+                        text-align: center;
+                        font-weight: 300;
+                        font-size: 1.25rem;
+                        letter-spacing: .0625rem;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out;
+                        transform: translateY(-1.875rem);
+                        }
+                    img {
+                        padding: .625rem;
+                        max-width: 16.875rem;
+                        max-height: 16.875rem;
+                        border-radius: 1.5625rem;
+
+                    }
+
+                    
+                }
+        }
+}
+
+.container_slider_plus {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    .slider_plus {
+        input {
+            display: none;
+            visibility: hidden;
+            &:nth-child(1):checked ~ .buttons label:nth-child(1),
+            &:nth-child(2):checked ~ .buttons label:nth-child(2),
+            &:nth-child(3):checked ~ .buttons label:nth-child(3) {
+                opacity: 1;
+                clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);                transform: scale(1.2);
+                width: 2.5rem;
+
+            }
+            &:nth-child(1):checked ~ .content_plus {
+                left: 0;
+            }
+            &:nth-child(2):checked ~ .content_plus {
+                left: -100%;
+            }
+            &:nth-child(3):checked ~ .content_plus {
+                left: -200%;
+            }
+
+        }
+        .buttons_plus {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            bottom: 3.125rem;
+            gap: .625rem;
+            label {
+                width: 1.25rem;
+                height: 1.25rem;
+                background-color: $orange;
+                opacity: 0.5;
+                cursor: pointer;
+                z-index: 10;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+                    width: 2.5rem;
+                    opacity: 1;
+                }
+            }
+        }
+        .content_plus {
+            position: relative;
+            width: 300%;
+            display: flex;
+            align-items: center;
+            transition: 1s ease-in-out;
+                .slide_plus1 {
+                    width: 100%;
+                    height: 25rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-image: url("../assets/img/4.png");
+                    background-size: cover;
+                    background-position: center;
+    
+                }
+                .slide_plus2 {
+                    @extend .slide_plus1;
+                    background-image: url("../assets/img/5.png");
+
+                }
+                .slide_plus3 {
+                    @extend .slide_plus1;
+                    background-image: url("../assets/img/6.png");
+
+                }
+        }
+
+    }
+
+}
+
+
+
+
+.plus {
+    @extend .top_10;
+    background-image: url("../assets/img/fondo_plus.webp");
+    h2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../assets/img/fondo_plus.webp");
+
+    }
+        .plus_flex {
+            @extend .top10_flex;
+            width: 60%;
+                .plus_card {
+                    @extend .ps4_card;
+                }
+            
+        }
+}
+
+
+
 }
