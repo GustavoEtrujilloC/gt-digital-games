@@ -1,13 +1,13 @@
 .container_card {
     position: relative;
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 6.25rem 0;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     flex-wrap: wrap;
     gap: 3.125rem;
@@ -18,7 +18,7 @@
         position: relative;
         border-radius: 1.25rem;
         overflow: hidden;
-        transition: 1s all;
+        transition: 1s ease-in-out;
         &::before {
             content: "";
             position: absolute;

@@ -38,7 +38,7 @@
   </header>
   <section class="nav" id="header_movil">
     <div class="nav_container">
-      <img src="../assets/img/Logo.png" class="nav_logo"></img>
+      <a href="../index.html"><img src="../assets/img/Logo.png" class="nav_logo"></img></a>
       <label for="menu" class="nav_ label">
         <img src="../assets/img/menu.svg" class="nav_img">
       </label>
@@ -51,20 +51,40 @@
         <a href="contacto.html" class="nav_item active">Contacto</a>
         <a href="login.html" class="nav_item">Login</a>
         <a href="faq.html" class="nav_item">Faq</a>
-
       </div>
     </div>
   </section>
   <section id="contacto" class="contenedor-contacto">
     <form action="">
       <h1> Contacto</h1>
+    <div class="informacion">
       <input type="text" id="nombre" placeholder="Nombre" required>
       <input type="text" id="apellido" placeholder="Apellido" required>
       <input type="email" id="email" placeholder="Email" required>
-      <input type="text" id="movil" placeholder="Movil" required>
-      <h4>Escribe tu mensaje</h4>
-      <textarea required name="" id="" cols="30" rows="10"></textarea>
+      <input type="number" id="movil" placeholder="Movil" required>
+      <textarea required name="" id="" cols="30" rows="10">Escribe tu mensaje</textarea>
+      <div class="button_contacto">
       <input type="submit" id="button" value="Enviar" required>
+      </div>
+    </div>
+    <div class="contacto_horario">
+      <div>
+      <h3>telefono</h3>
+      <p>555-55-55-55</p>
+      </div>
+      <div>
+      <h3>email</h3>
+      <p>soporte@gtdigitalgames.com</p>
+      </div>
+      <div>
+      <h3>horario de atencion y soporte</h3>
+      <p>Lunes a Viernes: de 10 hrs a 18 hrs. <br>
+
+        Sabados: 10 hrs  a 14 hrs. <br>
+        
+        Domingos: No laborable.</p>
+      </div>
+    </div>
     </form>
   </section>  
   <footer id="footer" class="contenedor-footer">

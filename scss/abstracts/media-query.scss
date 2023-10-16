@@ -43,15 +43,71 @@
         position: relative;
         top: 0;
         }
+
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 70%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 2.1875rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 40%;
+                font-size: 1.125rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: 1.125rem;
+                }
+                }
+            textarea {
+                font-size: 1.125rem;
+                min-width: 37.5rem;
+                max-width: 37.5rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: 1.125rem;
+                    }
+            }
+    }
+    }
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.875rem auto;
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1.125rem;
+
+        }
+    }
+}
+
     
 }
 
 
-
-
-
-
-@media (max-width: 1024px) {
+@media (max-width: 1250px) {
     #header {
         display: none;
     }
@@ -62,8 +118,68 @@
 
     * {
         font-size: 1rem;
-        max-width: 64rem;
+        max-width: 78.125rem;
     }
+
+            /* Main */
+    
+            .contenedor-main {
+                padding: 5rem .625rem;
+                gap: .9375rem;
+                justify-content:center;
+                align-content: center;
+                align-items: center;
+            
+            }
+            
+            .contenedor-main h1 {
+                padding: 1.25rem 0 .625rem 0;  
+                font-weight: 700;
+                font-size:  2.75rem;
+                margin-bottom: 3.125rem; 
+                            
+            }
+        
+            
+            .carrousel_h1 {
+                padding: 0;
+                height: 9.375rem;
+                font-size: .875rem;
+                .pre {
+                    padding: 0;
+                }
+                .out {
+                    padding:0;
+                    height: 50%;
+                    .inner {
+                        margin-left: .5rem ;
+                        height: 2vh;
+                        
+                    }
+                }                  
+            }
+        
+            @keyframes rotate_h1 {
+                0% {
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(-142px);
+                }
+                100%{
+                    transform: translateY(-286px);
+                }
+            
+            }
+
+            .imgMenu-4 {
+                margin-top: 0;
+                margin-right: 50px;
+            }
+
+
+        
+            // Newsletter
     
     .contenedor-newsletter {
         max-width: 100%;
@@ -147,6 +263,54 @@
 
     // Footer
 
+            .contenedor-footer {
+                height: auto;
+                padding: 1.875rem;    
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: .625rem 0;
+                gap: .9375rem;
+                .contenedor-imgLogoFooter {
+                max-width: 25rem;
+                max-height: 25rem;
+                flex-basis: 0%;
+                }
+                    .horario {
+                    padding: .625rem;
+                    text-align: center;
+                    h3 {
+                        font-size: 1.25rem;
+                    }
+                    img {
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    }
+                }
+                .socialMediaColumn {
+                    padding-top: 3.125rem;
+                    flex-basis: 0%;
+                    h2 {
+                        font-size: 1.25rem;
+                    }
+                    .socialMediaf {
+                        padding: 1.25rem;
+                        flex-basis: 0%;
+                        gap: .625rem;
+                            .imgRedSocial {
+                            width: 100%;
+                            height: 100%;
+        
+                }
+                }
+                }
+                }
+    
+
 
     .foot {
         p{
@@ -157,6 +321,53 @@
 
         }
     }
+
+    // blog
+
+    .contenedor-blog  {
+        padding: 0 ;
+        margin: 0;
+        height: 100%;
+        @include flexbox (flex, column, wrap, start, center);
+        gap: .9375rem;
+            h1 {
+                @include h1 ();
+                margin: 0;
+                top: 6.25rem;
+                padding: 0;
+            }
+            .background_img_blog {
+                display: none;
+    
+            }
+            .blog {
+                margin: 1.875rem 0;
+                width: 60%;
+                height: auto;
+                padding: .3125rem 0;
+                @include flexbox (flex, column, nowrap, baseline, center);
+                    p {
+                    text-align: justify;
+                    height: 20%;
+                    padding: .9375rem .3125rem;
+                    font-size: .9375rem;
+                    font-weight: 200;
+                    width: 100%;
+                    }
+                    .btn {
+                        width: 40%;
+                        height: 50%;
+                        margin: 2.5rem auto;
+                        padding: 0 .125rem;
+                        }
+                        }
+                        img {
+                        width: 100%;
+                        height: 100%;
+                        }
+                    
+    }
+
         
 
     // FAQ
@@ -165,6 +376,87 @@
         position: relative;
         top: 3.75rem;
         }
+    
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
+            width: 90%;
+            height: auto;
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 50%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+
+        /* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 90%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 35%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 37.5rem;
+                max-width: 37.5rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 50%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
+    }
+    }
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.875rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
+    }
+}
+
         
                 // PS4
 
@@ -239,6 +531,474 @@
     
 
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    #header {
+        display: none;
+    }
+    
+    #header_movil {
+        display: block;
+    }
+
+    * {
+        font-size: 1rem;
+        max-width: 64rem;
+    }
+
+            /* Main */
+    
+            .contenedor-main {
+                padding: 5rem .625rem;
+                gap: .9375rem;
+                justify-content:center;
+                align-content: center;
+                align-items: center;
+            
+            }
+            
+            .contenedor-main h1 {
+                padding: 1.25rem 0 .625rem 0;  
+                font-weight: 700;
+                font-size:  2.75rem;
+                margin-bottom: 3.125rem; 
+                            
+            }
+        
+            
+            .carrousel_h1 {
+                padding: 0;
+                height: 9.375rem;
+                font-size: .875rem;
+                .pre {
+                    padding: 0;
+                }
+                .out {
+                    padding:0;
+                    height: 50%;
+                    .inner {
+                        margin-left: .5rem ;
+                        height: 2vh;
+                        
+                    }
+                }                  
+            }
+        
+            @keyframes rotate_h1 {
+                0% {
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(-142px);
+                }
+                100%{
+                    transform: translateY(-286px);
+                }
+            
+            }
+
+            .imgMenu-4 {
+                margin-top: 0;
+                margin-right: 50px;
+            }
+
+
+        
+            // Newsletter
+    
+    .contenedor-newsletter {
+        max-width: 100%;
+        padding: 7.8125rem 7.8125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .contenedor-newsletter h2 {
+    font-size: 3.375rem;
+    text-align: center;
+    }
+    
+    .contenedor-newsletter p  {
+        margin-bottom: .9375rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        }
+    
+    .contenedor-newsletter input {
+        margin: .625rem;
+        padding: .125rem;
+        font-size: .875rem;
+    }
+    
+    .contenedor-newsletter button {
+        padding: .375rem;
+        font-size: 1rem;
+    }
+    /* Service */
+
+    .contenedor-service {
+        
+        padding: 3.125rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        gap: 1.875rem;
+    }
+        
+    .service {
+        max-width: 31.25rem;
+        padding: .5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    .service img {
+        margin: 1.875rem;
+    }
+    
+    .contenedor-service .service h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contenedor-service .service p {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .socialMediaf {
+        flex-basis: 25%;
+    
+    }
+    .socialMediaColumn {
+        flex-basis: 25%;
+    }
+    
+    .contenedor-imgLogoFooter {
+        flex-basis: 50%;
+    }
+    
+    
+
+    // Footer
+
+            .contenedor-footer {
+                height: auto;
+                padding: 1.875rem;    
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: .625rem 0;
+                gap: .9375rem;
+                .contenedor-imgLogoFooter {
+                max-width: 25rem;
+                max-height: 25rem;
+                flex-basis: 0%;
+                }
+                    .horario {
+                    padding: .625rem;
+                    text-align: center;
+                    h3 {
+                        font-size: 1.25rem;
+                    }
+                    img {
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    }
+                }
+                .socialMediaColumn {
+                    padding-top: 3.125rem;
+                    flex-basis: 0%;
+                    h2 {
+                        font-size: 1.25rem;
+                    }
+                    .socialMediaf {
+                        padding: 1.25rem;
+                        flex-basis: 0%;
+                        gap: .625rem;
+                            .imgRedSocial {
+                            width: 100%;
+                            height: 100%;
+        
+                }
+                }
+                }
+                }
+    
+
+
+    .foot {
+        p{
+        padding: .3125rem;
+        text-align: center;
+        background-color: black;
+        color: white;
+
+        }
+    }
+        
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 90%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 35%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: 1.25rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 37.5rem;
+                max-width: 37.5rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
+    }
+    }
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.875rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
+    }
+}
+
+
+// blog
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
+            margin: 0;
+            top: 6.25rem;
+            padding: 0;
+        }
+        .background_img_blog {
+            width: 60%;
+            margin: 2.5rem 0;
+
+        }
+        .blog {
+            margin: 1.875rem 0;
+            width: 60%;
+            height: auto;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
+                    img {
+                    width: 100%;
+                    height: 100%;
+                    }
+                
+}
+
+
+
+
+
+    // FAQ
+
+    .faq_h1 {
+        position: relative;
+        top: 3.75rem;
+        }
+    
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
+            width: 90%;
+            height: auto;
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 50%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+            
+                // PS4
+
+                .container_ps4 {
+                    .ps4_header {
+                        h1 {
+                        padding: 6.25rem 0;
+                        font-weight: 600;
+                        font-size: 2.5rem;
+                        color: $white_light;
+                        text-align: center;
+                        text-shadow: 6px 6px 8px black;
+                        animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    }
+                    }
+                .container_slider {
+                    display: none;
+                }
+                
+                .top_10 {
+                    padding: 1.875rem 0;
+                        h2 {
+                            height: 6.25rem;
+                            padding: 1.875rem;
+                            font-size: 2.1875rem;
+                            
+             
+                        }
+                        .top10_flex {
+                            width: 90%;
+                                .ps4_card {
+                                    width: 30%;
+                                    h3 {
+                                        font-weight: 200;
+                                        font-size: 1.25rem;
+                                        }
+                                    img {
+                                        width: 100%;
+                                        max-width: 18.75rem;
+                                        max-height: 18.75rem;
+                                    }
+                
+                                    
+                                }
+                        }
+                }
+                
+                .container_slider_plus {
+                    display: none;
+                }
+                
+                
+                
+                
+                .plus {
+                    h2 {
+                        font-size: 2.1875rem;
+                        height: 6.25rem;
+                        padding: 1.875rem .3125rem;
+                        margin: auto;
+                
+                    }
+                        .plus_flex {
+                            margin: 3.125rem 0;
+                            width: 70%;
+                        }
+                }
+                
+                
+                
+                }
+    
+
+}
+
+// Store
+
+.container_card {
+    width: 100%;
+}
+    
+.contenedor-store {
+    width: 100%;
+    height: auto;
+    padding: 3.125rem 0;
+    gap: 3.4375rem;
+        .header-store {
+        padding-top: 4.375rem;
+        h1 {
+        width: 100%;
+        margin-top: 1.25rem;
+        padding: 0;
+        font-size: 3.125rem;
+        text-align: center; 
+    }
+    }
+    }
+.background_img {
+    width: 18.75rem;
+    height: 9.375rem;
+    }    
+
+    .container_card {
+        width: 80%;
+    }
+
+
     
     
     
@@ -413,48 +1173,64 @@
     
     }
 
-    // Contacto
+/* Contacto*/
 
-    .contenedor-contacto form {
-        width: 80%;
-        height: auto;
-        padding: 6.25rem 0;
-    }
-            
-        /* Service */
-    
-    .contenedor-service {
-            
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 90%;
         padding: 3.125rem 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: center;
-        gap: 1.875rem;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 40%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 37.5rem;
+                max-width: 37.5rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
     }
-        
-    .service {
-        max-width: 25rem;
-        padding: .5rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
-        
-    .service img {
-        margin: 1.875rem;
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.875rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
     }
-    
-    .contenedor-service .service h2 {
-        font-size: 1.4375rem;
-    }
-    
-    .contenedor-service .service p {
-        font-size: .9375rem;
-    }
+}
     
         /* Footer */
 
@@ -523,11 +1299,11 @@
         gap: 3.4375rem;
             .header-store {
             padding-top: 4.375rem;
-            h2 {
+            h1 {
             width: 100%;
             margin-top: 1.25rem;
             padding: 0;
-            font-size: 1.875rem;
+            font-size: 2.8125rem;
             text-align: center; 
         }
         }
@@ -537,64 +1313,87 @@
         height: 9.375rem;
         }    
 
+        .container_card {
+            width: 80%;
+        }
 
-    /* Blog */
-    
-    .contenedor-blog  {
-        padding: 2.5rem 0 ;
-            h2 {
-            font-size: 1.5625rem;
-            height: auto;
-            padding: 2.5rem 0 1.25rem 0;
+
+
+// blog
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
             margin: 0;
-            }
-            .background_img_blog {
-                width: 70%;
-                padding: 3.75rem 8.125rem;
-            }
-            .blog {
-                width: 70%;
-                padding: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                gap: 1.5625rem;
+            top: 6.25rem;
+            padding: 0;
+        }
+        .background_img_blog {
+            display: none;
+
+        }
+        .blog {
+            margin: 1.875rem 0;
+            width: 70%;
+            height: auto;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
                     img {
-                    width: 60%;
-                    height: 60%;    
+                    width: 100%;
+                    height: 100%;
                     }
-                    p {
-                    padding: .625rem;
-                    font-size: .75rem;
-                    }
-                    .btn {
-                        width: 40%;
-                        align-self: center;
-                        font-size: .875rem;
-                        }
-                        }
-    }
+                
+}
 
-        // FAQ
-
+    // FAQ
 
     .faq_h1 {
-    position: relative;
-    top: 3.75rem;
-    }
-
-    .background_faq {
-        background-size: cover;
-    }
-
-    .container_faq {
-        width: 90%;
-        .acordeon_1 {
+        position: relative;
+        top: 3.75rem;
+        }
+    
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
             width: 90%;
-    }
-    }
-
+            height: auto;
+            @include flexbox (flex, column, wrap, center, baseline);
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+    
             // PS4
 
             .container_ps4 {
@@ -668,6 +1467,485 @@
 
     
     }
+
+    @media (max-width:712px) {
+
+        * {
+            font-size: 1rem;
+            max-width: 44.5rem;
+        }
+        
+        #header {
+            display: none;
+        }
+        
+        #header_movil {
+            display: block;
+        }
+        
+        
+        
+        /* Main */
+        
+        .contenedor-main {
+            padding: 5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 1.875rem;
+        }
+        
+        .contenedor-main h1 {
+            padding: 1.25rem 0 .625rem 0;  
+            font-weight: 700;
+            font-size:  1.5625rem;
+            margin-bottom: 0; 
+                        
+        }
+    
+        .carrousel_h1 {
+            padding: 0;
+            height: 6.25rem;
+            font-size: .875rem;
+            .pre {
+                padding: 0;
+            }
+            .out {
+                padding:0;
+                height: 50%;
+                .inner {
+                    margin-left: .5rem ;
+                    height: 2vh;
+                    
+                }
+            }                  
+        }
+    
+        @keyframes rotate_h1 {
+            0% {
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-67px);
+            }
+            100%{
+                transform: translateY(-135px);
+            }
+        
+        }
+    
+        
+        .imgMenu {
+            margin: 0;
+            max-width: 7.1875rem;
+            max-height: 15.9375rem;
+        }
+            
+        .imgMenuLateral {
+            margin: 0;
+            max-width: 14rem;
+            max-height: 12.5625rem;
+        
+        }
+            
+        .imgMenu-1 {
+            margin-bottom: 0;
+            margin-left: 50px;
+        }
+            
+        .imgMenu-2 {
+            margin-top: 0;
+            margin-right: 50px;
+        }
+            
+        .imgMenu-3 { 
+            margin-bottom: 0;
+            margin-left: 50px;
+        }
+            
+        .imgMenu-4 {
+            margin-top: 0;
+            margin-right: 50px;
+        }
+            
+        .imgMenu-5 {
+            margin-bottom: 0;
+            margin-left: 50px;
+        }
+            
+        .contenedor-columnaImgLateral {
+            gap: 1.875rem;
+            padding-bottom: 1.875rem;
+        }
+        
+        /* Newsletter */
+        
+        .contenedor-newsletter {
+            padding: 4.375rem 1.25rem;
+        
+            }
+        
+        .contenedor-newsletter h2 {
+            font-size: 2.1875rem;
+            font-weight: 600;
+            text-align: center;
+                
+        }
+                
+        .contenedor-newsletter p  {
+                
+            font-size: .875rem;
+            font-weight: 700;
+            letter-spacing: 0;
+            text-align: center;
+                
+        }
+        
+        .contenedor-newsletter div form {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        
+        }
+                
+        .contenedor-newsletter input {
+            padding: 0;
+            margin: 1.25rem auto;
+            font-size: .75rem;
+            font-weight: bold;
+            border-radius: .3125rem;
+            width: 45%;
+            
+        }
+        
+        .contenedor-newsletter button {
+            width: 100%;
+            padding: .125rem;
+            font-size: .75rem;
+        
+        }
+                
+            /* Service */
+        
+        .contenedor-service {
+                
+            padding: 3.125rem 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+        }
+            
+        .service {
+            max-width: 17.5rem;
+            padding: .5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+            
+        .service img {
+            margin: .9375rem;
+        }
+        
+        .contenedor-service .service h2 {
+            font-size: 1rem;
+        }
+        
+        .contenedor-service .service p {
+            font-size: .75rem;
+        }
+        
+            /* Footer */
+            
+            .contenedor-footer {
+                height: auto;
+                padding: 1.875rem;    
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: .625rem 0;
+                gap: .9375rem;
+                .contenedor-imgLogoFooter {
+                max-width: 17.5rem;
+                max-height: 9.375rem;
+                flex-basis: 0%;
+                }
+                    .horario {
+                    padding: .625rem;
+                    text-align: center;
+                    img {
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    }
+                }
+                .socialMediaColumn {
+                    padding-top: 3.125rem;
+                    flex-basis: 0%;
+                    .socialMediaf {
+                        flex-basis: 0%;
+                        gap: .625rem;
+                            .imgRedSocial {
+                            width: 100%;
+                            height: 100%;
+        
+                }
+                }
+                }
+                }
+            .foot {
+                p{
+                padding: .3125rem;
+                text-align: center;
+                background-color: black;
+                color: white;
+        
+                }
+                }
+                
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 70%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 40%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 16.25rem;
+                max-width: 10rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
+    }
+    }
+
+    .contacto_horario {
+        width: 90%;
+        margin: auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
+    }
+}
+
+        
+        /* store */
+        
+        .contenedor-store {
+            width: 100%;
+            height: auto;
+            padding: 3.125rem 0;
+            gap: 3.4375rem;
+                .header-store {
+                padding-top: 4.375rem;
+                h1 {
+                width: 100%;
+                padding: 0 1.875rem;
+                font-size: 2.8125rem;
+                text-align: center; 
+            }
+            }
+            }
+
+            .container_card {
+                width: 80%;
+            }
+
+            
+            
+// blog
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
+            margin: 0;
+            top: 6.25rem;
+            padding: 0;
+            font-size: 1.875rem;
+        }
+        .background_img_blog {
+            display: none;
+
+        }
+        .blog {
+            margin: 1.875rem 0;
+            width: 90%;
+            height: auto;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
+                    img {
+                    width: 100%;
+                    height: 100%;
+                    }
+                
+}
+
+
+// FAQ
+
+    .faq_h1 {
+        position: relative;
+        top: 3.75rem;
+        }
+    
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
+            width: 90%;
+            height: auto;
+            @include flexbox (flex, column, wrap, center, baseline);
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+        
+            // PS4
+
+            .container_ps4 {
+                .ps4_header {
+                    h1 {
+                    padding: 6.25rem 0;
+                    font-weight: 600;
+                    font-size: 1.875rem;
+                    color: $white_light;
+                    text-align: center;
+                    text-shadow: 6px 6px 8px black;
+                    animation: textoH1 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                }
+                }
+            .container_slider {
+                display: none;
+            }
+            
+            .top_10 {
+                padding: 1.875rem 0;
+                    h1 {
+                        height: 6.25rem;
+                        padding: 1.875rem;
+                        font-size: 1.5625rem;
+                        
+         
+                    }
+                    .top10_flex {
+                        width: 60%;
+                            .ps4_card {
+                                width: 80%;
+                                h3 {
+                                    font-weight: 200;
+                                    font-size: 1.125rem;
+                                    }
+                                img {
+                                    width: 100%;
+                                }
+            
+                                
+                            }
+                    }
+            }
+            
+            .container_slider_plus {
+                display: none;
+            }
+            
+            
+            
+            
+            .plus {
+                h2 {
+                    height: 6.25rem;
+                    padding: 1.875rem .3125rem;
+                    margin: auto;
+            
+                }
+                    .plus_flex {
+                        margin: 3.125rem 0;
+                        width: 80%;
+                    }
+            }
+            
+            
+            
+            }
+        
+    
+
+    }
+
     
     
     @media (max-width:576px) {
@@ -915,53 +2193,65 @@
             }
             }
             
-    /* Contacto */
-    
-    .contenedor-contacto form {
-        width: 80%;
-        height: auto;
-        padding: 6.25rem 0;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        backdrop-filter: blur(1.875rem);
-    
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 70%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 90%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 16.25rem;
+                max-width: 10rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
     }
-    
-    .contenedor-contacto form h1 {
-        margin-bottom: 3.125rem;
-        width: 100%;
-        font-size: 1.875rem;
     }
-    
-    .contenedor-contacto form input {
-        width: 80%;
-        height: 2.5rem;
-        padding-left: 0;
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.5625rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
     }
-    
-    .contenedor-contacto #apellido, .contenedor-contacto #movil {
-        margin-left: 0;
-    }
-    
-    .contenedor-contacto form h4 {
-        color: white;
-        font-weight: 300;
-        width: 80%;
-        margin-top: 1.25rem;
-    
-    }
-    
-    .contenedor-contacto form textarea {
-        min-width: 80%;
-        max-width: 80%;
-    }
-    
-    .contenedor-contacto #button {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
+}
+        
     
     
     /* store */
@@ -973,78 +2263,99 @@
         gap: 3.4375rem;
             .header-store {
             padding-top: 4.375rem;
-            h2 {
+            h1 {
             width: 100%;
+            height: 3.125rem;
             margin-top: 1.25rem;
             padding: 0;
-            font-size: 1.875rem;
+            font-size: 2.5rem;
             text-align: center; 
         }
         }
         }
     .background_img {
+        display: none;
         width: 18.75rem;
         height: 9.375rem;
         }
         
         
-    /* Blog */
-    
-    .contenedor-blog  {
-        padding: 2.5rem 0 ;
-            h2 {
-            font-size: 1.5625rem;
-            height: auto;
-            padding: 2.5rem 0 1.25rem 0;
+// blog
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
             margin: 0;
-            }
-            .background_img_blog {
-                width: 20%;
-                padding: 3.75rem 8.125rem;
-            }
-            .blog {
-                width: 80%;
-                padding: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                gap: 1.5625rem;
+            top: 6.25rem;
+            padding: 0;
+            font-size: 1.875rem;
+        }
+        .background_img_blog {
+            display: none;
+
+        }
+        .blog {
+            margin: 1.875rem 0;
+            width: 90%;
+            height: auto;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
                     img {
                     width: 100%;
-                    height: 100%;    
+                    height: 100%;
                     }
-                    p {
-                    padding: .625rem;
-                    font-size: .75rem;
-                    }
-                    .btn {
-                        width: 40%;
-                        align-self: center;
-                        font-size: .875rem;
-                        }
-                        }
-    }
+                
+}
 
-        // FAQ
+    // FAQ
 
     .faq_h1 {
-    position: relative;
-    top: 3.75rem;
-    }
-
+        position: relative;
+        top: 3.75rem;
+        }
     
-    .background_faq {
-        background-size: cover;
-    }
-
-    .container_faq {
-        width: 90%;
-        .acordeon_1 {
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
             width: 90%;
-    }
-    }
-
+            height: auto;
+            @include flexbox (flex, column, wrap, center, baseline);
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+        
             // PS4
 
             .container_ps4 {
@@ -1065,19 +2376,20 @@
             
             .top_10 {
                 padding: 1.875rem 0;
-                    h2 {
+                    h1 {
                         height: 6.25rem;
                         padding: 1.875rem;
-                        font-size: 1.25rem;
+                        font-size: 1.5625rem;
                         
          
                     }
                     .top10_flex {
+                        width: 80%;
                             .ps4_card {
                                 width: 80%;
                                 h3 {
                                     font-weight: 200;
-                                    font-size: .9375rem;
+                                    font-size: 1.125rem;
                                     }
                                 img {
                                     width: 100%;
@@ -1332,11 +2644,19 @@
                 width: 6.25rem;
                 height: 6.25rem;
                 }
+                p {
+                    font-size: .875rem;
+                }
             }
             .socialMediaColumn {
                 padding-top: 3.125rem;
                 flex-basis: 0%;
+                h2 {
+                    font-size: 1.125rem;
+
+                }
                 .socialMediaf {
+                    padding: .9375rem;
                     flex-basis: 0%;
                     gap: .625rem;
                         .imgRedSocial {
@@ -1358,49 +2678,65 @@
             }
         
 
-    /* Contacto */
-    
-    .contenedor-contacto form {
-        width: 80%;
-        height: auto;
-        padding: 6.25rem 0;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        backdrop-filter: blur(1.875rem);
-    
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 90%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 90%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 16.25rem;
+                max-width: 10rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
     }
-    
-    .contenedor-contacto form h1 {
-        margin-bottom: 3.125rem;
-        width: 100%;
-        font-size: 1.875rem;
     }
-    
-    .contenedor-contacto form input {
-        width: 80%;
-        height: 2.5rem;
-        padding-left: 0;
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.5625rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
     }
-    
-    .contenedor-contacto #apellido, .contenedor-contacto #movil {
-        margin-left: 0;
-    }
-    
-    .contenedor-contacto form h4 {
-        color: white;
-        font-weight: 300;
-        width: 80%;
-        margin-top: 1.25rem;
-    
-    }
-    
-    .contenedor-contacto form textarea {
-        min-width: 80%;
-        max-width: 80%;
-    }
-    
+}
+        
     
     
     /* store */
@@ -1412,78 +2748,96 @@
         gap: 3.4375rem;
             .header-store {
             padding-top: 4.375rem;
-            h2 {
+            h1 {
+            height: 3.125rem;
             width: 100%;
             margin-top: 1.25rem;
-            padding: 0;
-            font-size: 1.875rem;
+            padding: .625rem;
+            font-size: 2.1875rem;
             text-align: center; 
         }
         }
         }
     .background_img {
-        width: 18.75rem;
-        height: 9.375rem;
+        display: none;
         }
 
-    /* Blog */
-    
-    .contenedor-blog  {
-        padding: 2.5rem 0 ;
-            h2 {
-            font-size: 1.5625rem;
-            height: auto;
-            padding: 2.5rem 0 1.25rem 0;
+// blog
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
             margin: 0;
-            }
-            .background_img_blog {
-                width: 70%;
-                padding: 3.75rem 8.125rem;
-            }
-            .blog {
-                width: 80%;
-                padding: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                gap: 1.5625rem;
+            top: 6.25rem;
+            padding: 0;
+            font-size: 1.875rem;
+        }
+        .background_img_blog {
+            display: none;
+
+        }
+        .blog {
+            margin: 1.875rem 0;
+            width: 90%;
+            height: auto;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
                     img {
                     width: 100%;
-                    height: 100%;    
+                    height: 100%;
                     }
-                    p {
-                    padding: .625rem;
-                    font-size: .75rem;
-                    }
-                    .btn {
-                        width: 40%;
-                        align-self: center;
-                        font-size: .875rem;
-                        }
-                        }
-    }
+                
+}
 
-
-        // FAQ
+    // FAQ
 
     .faq_h1 {
-    position: relative;
-    top: 3.75rem;
-    }
-
+        position: relative;
+        top: 3.75rem;
+        }
     
-    .background_faq {
-        background-size: cover;
-    }
-
-    .container_faq {
-        width: 90%;
-        .acordeon_1 {
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
             width: 90%;
-    }
-    }
-
+            height: auto;
+            @include flexbox (flex, column, wrap, center, baseline);
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+        
             // PS4
 
             .container_ps4 {
@@ -1504,19 +2858,20 @@
             
             .top_10 {
                 padding: 1.875rem 0;
-                    h2 {
+                    h1 {
                         height: 6.25rem;
                         padding: 1.875rem;
-                        font-size: 1.25rem;
+                        font-size: 1.5625rem;
                         
          
                     }
                     .top10_flex {
+                        width: 80%;
                             .ps4_card {
                                 width: 80%;
                                 h3 {
                                     font-weight: 200;
-                                    font-size: .9375rem;
+                                    font-size: 1.125rem;
                                     }
                                 img {
                                     width: 100%;
@@ -1769,11 +3124,15 @@
                 width: 6.25rem;
                 height: 6.25rem;
                 }
+                p {
+                    font-size: .875rem;
+                }
             }
             .socialMediaColumn {
                 padding-top: 3.125rem;
                 flex-basis: 0%;
                 .socialMediaf {
+                    padding: .9375rem;
                     flex-basis: 0%;
                     gap: .625rem;
                         .imgRedSocial {
@@ -1796,53 +3155,64 @@
                     }
                     }
             
-    /* Contacto */
-    
-    .contenedor-contacto form {
-        width: 80%;
-        height: auto;
-        padding: 6.25rem 0;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        backdrop-filter: blur(1.875rem);
-    
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
+        width: 90%;
+        padding: 3.125rem 0;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 90%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 16.25rem;
+                max-width: 10rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
     }
-    
-    .contenedor-contacto form h1 {
-        margin-bottom: 3.125rem;
-        width: 100%;
-        font-size: 1.875rem;
     }
-    
-    .contenedor-contacto form input {
-        width: 80%;
-        height: 2.5rem;
-        padding-left: 0;
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.25rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
     }
-    
-    .contenedor-contacto #apellido, .contenedor-contacto #movil {
-        margin-left: 0;
-    }
-    
-    .contenedor-contacto form h4 {
-        color: white;
-        font-weight: 300;
-        width: 80%;
-        margin-top: 1.25rem;
-    
-    }
-    
-    .contenedor-contacto form textarea {
-        min-width: 80%;
-        max-width: 80%;
-    }
-    
-    .contenedor-contacto #button {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
+}
     
     
     /* store */
@@ -1854,8 +3224,9 @@
         gap: 3.4375rem;
             .header-store {
             padding-top: 4.375rem;
-            h2 {
+            h1 {
             width: 100%;
+            height: 3.125rem;
             margin-top: 1.25rem;
             padding: 0;
             font-size: 1.875rem;
@@ -1864,68 +3235,86 @@
         }
         }
     .background_img {
-        width: 18.75rem;
-        height: 9.375rem;
+        display: none;
         }
 
 
-    /* Blog */
-   
-    .contenedor-blog  {
-        padding: 2.5rem 0 ;
-            h2 {
-            font-size: 1.5625rem;
-            height: auto;
-            padding: 2.5rem 0 1.25rem 0;
+// blog
+
+        .contenedor-blog  {
+            padding: 0 ;
             margin: 0;
-            }
-            .background_img_blog {
-                width: 70%;
-                padding: 3.75rem 8.125rem;
-            }
-            .blog {
-                width: 80%;
-                padding: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                gap: 1.5625rem;
-                    img {
-                    width: 100%;
-                    height: 100%;    
-                    }
-                    p {
-                    padding: .625rem;
-                    font-size: .75rem;
-                    }
-                    .btn {
-                        width: 40%;
-                        align-self: center;
-                        font-size: .875rem;
+            height: 100%;
+            @include flexbox (flex, column, wrap, start, center);
+            gap: .9375rem;
+                h1 {
+                    @include h1 ();
+                    margin: 0;
+                    top: 6.25rem;
+                    padding: 0;
+                    font-size: 1.875rem;
+                }
+                .background_img_blog {
+                    display: none;
+        
+                }
+                .blog {
+                    margin: 1.875rem 0;
+                    width: 90%;
+                    height: auto;
+                    padding: .3125rem 0;
+                    @include flexbox (flex, column, nowrap, baseline, center);
+                        p {
+                        text-align: justify;
+                        height: 20%;
+                        padding: .9375rem .3125rem;
+                        font-size: .9375rem;
+                        font-weight: 200;
+                        width: 100%;
                         }
-                        }
-    }
-    
-        // FAQ
+                        .btn {
+                            width: 40%;
+                            height: 50%;
+                            margin: 2.5rem auto;
+                            padding: 0 .125rem;
+                            }
+                            }
+                            img {
+                            width: 100%;
+                            height: 100%;
+                            }
+                        
+        }
+            
+    // FAQ
 
     .faq_h1 {
-    position: relative;
-    top: 3.75rem;
-    }
-
+        position: relative;
+        top: 3.75rem;
+        }
     
-    .background_faq {
-        background-size: cover;
-    }
-
-    .container_faq {
-        width: 90%;
-        .acordeon_1 {
+        .background_faq {
+            background-size: cover;
+            height: auto;
+        }
+    
+        .container_faq {
             width: 90%;
-    }
-    }
-
+            height: auto;
+            @include flexbox (flex, column, wrap, center, baseline);
+            margin-top: 6.25rem;
+            .acordeon_1 {
+                width: 100%;
+                height: auto;
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: .875rem;
+                }
+        }
+        }
+        
         // PS4
 
     .container_ps4 {
@@ -1946,14 +3335,16 @@
         
         .top_10 {
             padding: 1.875rem 0;
-                h2 {
+                h1 {
                     height: 6.25rem;
                     padding: 1.875rem;
-                    font-size: 1.25rem;
+                    font-size: 1.375rem;
+                    
                     
      
                 }
                 .top10_flex {
+                    width: 80%;
                         .ps4_card {
                             width: 80%;
                             h3 {
@@ -1992,6 +3383,7 @@
         
         
         }
+    
 
 
     
@@ -2017,7 +3409,7 @@
     /* Main */
     
     .contenedor-main {
-        padding: 5rem 1.25rem;
+        padding: 4.375rem 1.25rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -2205,11 +3597,15 @@
             width: 6.25rem;
             height: 6.25rem;
             }
+            p {
+                font-size: .875rem;
+            }
         }
         .socialMediaColumn {
             padding-top: 3.125rem;
             flex-basis: 0%;
             .socialMediaf {
+                padding: .9375rem;
                 flex-basis: 0%;
                 gap: .625rem;
                     .imgRedSocial {
@@ -2231,126 +3627,115 @@
             }
             }
     
-    /* Contacto */
-    
-    .contenedor-contacto form {
+/* Contacto*/
+
+.contenedor-contacto {
+    min-height: 100vh;
+    padding: 9.375rem 0;
+    form {
         width: 90%;
-        height: auto;
-        padding: 7.5rem 0;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        backdrop-filter: blur(1.875rem);
-    
-    }
-    
-    .contenedor-contacto form h1 {
-        margin-bottom: 3.125rem;
-        width: 100%;
-        font-size: 1.875rem;
-    }
-    
-    .contenedor-contacto form input {
-        width: 80%;
-        height: 2.5rem;
-        padding-left: 0;
-    }
-    
-    .contenedor-contacto #apellido, .contenedor-contacto #movil {
-        margin-left: 0;
-    }
-    
-    .contenedor-contacto form h4 {
-        color: $white_light;
-        font-weight: 300;
-        width: 80%;
-        margin-top: 1.25rem;
-    
-    }
-    
-    .contenedor-contacto form textarea {
-        min-width: 80%;
-        max-width: 80%;
-    }
-    
-    .contenedor-contacto #button {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-    
-    
-    /* store */
-
-    .container_card {
-        width: 100%;
-    }
-
-        
-    .contenedor-store {
-        width: 100%;
-        height: auto;
         padding: 3.125rem 0;
-        gap: 3.4375rem;
-            .header-store {
-            padding-top: 4.375rem;
-            h2 {
-            width: 100%;
-            margin-top: 1.25rem;
+        h1 {
+            width: 85%;
+            font-size: 1.5625rem;
+            padding: .3125rem 0;
+            margin: .3125rem 0;
+            }
+    .informacion {
+            input {
+                width: 90%;
+                font-size: .875rem;
+                padding-left: 0;
+                margin: .625rem 0 ;
+
+
+                &:focus {
+                font-size: .875rem;
+                }
+                }
+            textarea {
+                font-size: .875rem;
+                min-width: 16.25rem;
+                max-width: 10rem;
+                min-height: 5rem;
+                max-height: 5rem;
+            &:focus {
+                font-size: .875rem;
+
+                }
+                }
+                .button_contacto {
+                    width: 60%;
+                    input {
+                        font-size: .875rem;
+                    }
+            }
+    }
+    }
+
+    .contacto_horario {
+        width: 90%;
+        margin: 1.25rem auto;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .875rem;
+
+        }
+    }
+}
+        
+        
+        
+    
+/* Blog */
+
+.contenedor-blog  {
+    padding: 0 ;
+    margin: 0;
+    height: 100%;
+    @include flexbox (flex, column, wrap, start, center);
+    gap: .9375rem;
+        h1 {
+            @include h1 ();
+            margin: 0;
+            top: 6.25rem;
             padding: 0;
             font-size: 1.875rem;
-            text-align: center; 
         }
+        .background_img_blog {
+            display: none;
+
         }
-        }
-    .background_img {
-        width: 18.75rem;
-        height: 9.375rem;
-        }
-        
-        
-        
-        
-    
-    /* Blog */
-    
-    .contenedor-blog  {
-        padding: 2.5rem 0 ;
-            h2 {
-            font-size: 1.5625rem;
+        .blog {
+            margin: 1.875rem 0;
+            width: 90%;
             height: auto;
-            padding: 2.5rem 0 1.25rem 0;
-            margin: 0;
-            }
-            .background_img_blog {
-                width: 20%;
-                padding: 3.75rem 8.125rem;
-            }
-            .blog {
-                width: 80%;
-                padding: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                gap: 1.5625rem;
+            padding: .3125rem 0;
+            @include flexbox (flex, column, nowrap, baseline, center);
+                p {
+                text-align: justify;
+                height: 20%;
+                padding: .9375rem .3125rem;
+                font-size: .9375rem;
+                font-weight: 200;
+                width: 100%;
+                }
+                .btn {
+                    width: 40%;
+                    height: 50%;
+                    margin: 2.5rem auto;
+                    padding: 0 .125rem;
+                    }
+                    }
                     img {
                     width: 100%;
-                    height: 100%;    
+                    height: 100%;
                     }
-                    p {
-                    padding: .625rem;
-                    font-size: .75rem;
-                    }
-                    .btn {
-                        width: 40%;
-                        align-self: center;
-                        font-size: .875rem;
-                        }
-                        }
-    }
-    
-        
+                
+}
+
     
 
 
@@ -2363,12 +3748,23 @@
 
     .background_faq {
         background-size: cover;
+        height: auto;
     }
 
     .container_faq {
         width: 90%;
+        height: auto;
+        @include flexbox (flex, column, wrap, center, baseline);
+        margin-top: 6.25rem;
         .acordeon_1 {
-            width: 90%;
+            width: 100%;
+            height: auto;
+            h2 {
+                font-size: 1.25rem;
+            }
+            h3 {
+                font-size: .875rem;
+            }
     }
     }
 
@@ -2392,7 +3788,7 @@
         
         .top_10 {
             padding: 1.875rem 0;
-                h2 {
+                h1 {
                     height: 6.25rem;
                     padding: 1.875rem;
                     font-size: 1.25rem;
@@ -2400,11 +3796,12 @@
      
                 }
                 .top10_flex {
+                    width: 80%;
                         .ps4_card {
                             width: 80%;
                             h3 {
                                 font-weight: 200;
-                                font-size: .9375rem;
+                                font-size: .75rem;
                                 }
                             img {
                                 width: 100%;
