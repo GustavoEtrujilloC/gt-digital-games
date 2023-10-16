@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   border-radius: 1.25rem;
   overflow: hidden;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in-outg;
 }
 .container_card .card::before {
   content: "";
